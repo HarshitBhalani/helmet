@@ -332,7 +332,7 @@ A: Yes, but performance may vary with lighting conditions.
 
 **🔒 PROTECTED BY COPYRIGHT LAW 🔒**
 
-Made with ❤️ for workplace safety by Harshit Bhalani
+Made with ❤️ for workplace safety by Harshit Bhalani & team (raval Heet and patel dhairya)
 
 **© 2025 All Rights Reserved**
 
