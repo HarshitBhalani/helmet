@@ -84,53 +84,6 @@ numpy==1.24.3
 pandas==2.0.3
 ```
 
-## 🔧 Installation Guide
-
-### 1. Clone Repository
-```bash
-git clone https://github.com/HarshitBhalani/Helmet-Compliance-Monitoring.git
-cd Helmet-Compliance-Monitoring
-```
-
-### 2. Create Virtual Environment (Recommended)
-```bash
-# Windows
-python -m venv helmet_env
-helmet_env\Scripts\activate
-
-# macOS/Linux
-python -m venv helmet_env
-source helmet_env/bin/activate
-```
-
-### 3. Install Dependencies
-```bash
-pip install -r requirements.txt
-```
-
-### 4. Model Setup
-**⚠️ Important**: Model files are not included in this repository due to size constraints.
-
-**Option A: Train Your Own Model**
-1. Visit [Google Teachable Machine](https://teachablemachine.withgoogle.com/)
-2. Create image classification project
-3. Upload helmet/no-helmet training images
-4. Train and export as TensorFlow model
-5. Download and rename to `model.h5`
-6. Place in project root directory
-
-**Option B: Use Pre-trained Model** (If Available)
-1. Contact repository maintainer for model file
-2. Place `model.h5` in project root directory
-
-### 5. Run Application
-```bash
-streamlit run app.py
-```
-
-### 6. Access Interface
-Open your browser and navigate to: `http://localhost:8501`
-
 ## 📱 How to Use
 
 ### 1. Single Image Detection
@@ -269,26 +222,6 @@ Many false positives/negatives
 - Use GPU-enabled TensorFlow for faster processing
 - Optimize image resolution for speed vs accuracy balance
 - Consider model quantization for mobile deployment
-
-## 🤝 Contributing
-
-We welcome contributions to improve the system!
-
-### How to Contribute
-1. **Fork** the repository
-2. **Create** a feature branch (`git checkout -b feature/AmazingFeature`)
-3. **Commit** your changes (`git commit -m 'Add some AmazingFeature'`)
-4. **Push** to the branch (`git push origin feature/AmazingFeature`)
-5. **Open** a Pull Request
-
-### Areas for Contribution
-- Model accuracy improvements
-- Additional safety equipment detection
-- Mobile app development
-- Integration with IoT devices
-- Advanced analytics features
-
----
 
 ## 📄 LICENSE - ALL RIGHTS RESERVED
 
