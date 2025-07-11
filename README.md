@@ -6,6 +6,14 @@ Safety rule violations, like not wearing helmets, are hard to track manually. A 
 
 ![Helmet Detection Demo](https://img.shields.io/badge/Status-Active-brightgreen) ![Python](https://img.shields.io/badge/Python-3.8+-blue) ![TensorFlow](https://img.shields.io/badge/TensorFlow-2.13+-orange) ![Streamlit](https://img.shields.io/badge/Streamlit-1.28+-red)
 
+## ⚠️ IMPORTANT LEGAL NOTICE
+
+**🚨 THIS PROJECT IS PROTECTED BY COPYRIGHT LAW 🚨**
+
+This repository is monitored for unauthorized copying, forking, or distribution. All activities are tracked and logged.
+
+---
+
 ## 🎯 Problem Statement
 
 Traditional manual safety monitoring faces several challenges:
@@ -280,9 +288,69 @@ We welcome contributions to improve the system!
 - Integration with IoT devices
 - Advanced analytics features
 
-## 📄 License
+---
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+## 📄 LICENSE - ALL RIGHTS RESERVED
+
+### 🚨 PROPRIETARY SOFTWARE - STRICT COPYRIGHT PROTECTION 🚨
+
+**© 2025 Harshit Bhalani. All Rights Reserved.**
+
+This project is proprietary and confidential software. All rights are reserved by the copyright holder.
+
+### ⚖️ LEGAL TERMS & CONDITIONS
+
+**UNAUTHORIZED USE PROHIBITED**
+
+This repository and its contents are protected by copyright law and international treaties. Any unauthorized copying, distribution, modification, or use of this software is **STRICTLY PROHIBITED** and will result in legal action.
+
+### 🚫 WHAT IS NOT PERMITTED:
+
+- ❌ **Copying** any portion of this code
+- ❌ **Forking** or cloning this repository for personal use
+- ❌ **Redistributing** in any form (source code, compiled, or modified)
+- ❌ **Commercial use** without explicit written permission
+- ❌ **Creating derivative works** based on this project
+- ❌ **Reverse engineering** or decompiling
+- ❌ **Removing** copyright notices or attribution
+- ❌ **Using** for competing products or services
+
+### ✅ WHAT IS PERMITTED:
+
+- ✅ **Viewing** the code for educational purposes only
+- ✅ **Learning** from the implementation concepts
+- ✅ **Discussing** the project in academic contexts
+- ✅ **Linking** to this repository (not copying)
+
+### 🔍 MONITORING & ENFORCEMENT
+
+**This repository is actively monitored for copyright violations.**
+
+- All forks, downloads, and access attempts are logged
+- Automated detection systems identify unauthorized use
+- Legal action will be taken against violators
+- DMCA takedown notices will be issued for violations
+
+### ⚠️ VIOLATION CONSEQUENCES
+
+Unauthorized use of this software may result in:
+- **Immediate legal action** under copyright law
+- **Cease and desist** orders
+- **Financial penalties** and damages
+- **Criminal prosecution** under applicable laws
+
+### 📧 LICENSING INQUIRIES
+
+For licensing, permission, or commercial use inquiries, contact:
+- **Email**: harshitbhalani187@gmail.com
+- **GitHub**: @HarshitBhalani
+- **Subject**: "Helmet Detection System - Licensing Inquiry"
+
+### 🛡️ DISCLAIMER
+
+This software is provided "as is" without warranty of any kind. The author shall not be liable for any damages arising from the use of this software.
+
+---
 
 ## 📞 Support & Contact
 
@@ -329,6 +397,16 @@ A: Yes, but performance may vary with lighting conditions.
 
 **⚡ Automated Safety Monitoring for a Safer Workplace ⚡**
 
-Made with ❤️ for workplace safety
+**🔒 PROTECTED BY COPYRIGHT LAW 🔒**
+
+Made with ❤️ for workplace safety by Harshit Bhalani
+
+**© 2025 All Rights Reserved**
 
 </div>
+
+---
+
+### 🚨 FINAL WARNING
+
+**This project is protected by copyright law. Any unauthorized copying, distribution, or use will result in immediate legal action. We actively monitor and track all repository activity.**
