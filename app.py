@@ -5,8 +5,14 @@ import numpy as np
 from PIL import Image
 import os
 from datetime import datetime
+import threading
+import time
+import urllib.request
 
-
+# Health check endpoint to respond to keep-alive pings
+if st.experimental_get_query_params().get("health"):
+    st.json({"status": "alive", "timestamp": datetime.utcnow().isoformat()})
+    st.stop()
 
 # Page configuration
 st.set_page_config(
@@ -261,7 +267,6 @@ def main():
                     
                     if is_compliant:
                         st.success("✅ **HELMET DETECTED**")
-                        # REMOVED: st.balloons() - No more balloon animation
                         violation_type = "Compliant"
                     else:
                         st.error("❌ **NO HELMET DETECTED**")
@@ -402,18 +407,29 @@ def main():
             if st.button("🗑️ Clear All Logs", type="secondary"):
                 st.session_state.violation_logs = []
                 st.success("Logs cleared!")
-                st.rerun()
+                st.experimental_rerun()
         else:
-            st.info("📭 No violation logs yet. Start detecting to see logs here.")
+            st.info("No violation logs found yet. Monitor some images or camera feed first.")
     
-    # Footer
-    st.markdown("---")
-    st.markdown("""
-    <div style='text-align: center; color: gray;'>
-        <p>🏭 <strong>Helmet Compliance Monitoring System</strong></p>
-        <p>Ensuring workplace safety through AI-powered detection</p>
-    </div>
-    """, unsafe_allow_html=True)
+    else:
+        st.warning("Select a valid mode from the sidebar.")
+
+# Keep-alive ping to prevent sleeping on Render or similar hosting
+RENDER_URL = 'https://helmet-tmnq.onrender.com/?health=true' 
+
+def keep_alive():
+    def ping():
+        while True:
+            try:
+                with urllib.request.urlopen(RENDER_URL) as response:
+                    print(f"[Keep-alive] Ping response: {response.status}")
+            except Exception as e:
+                print(f"[Keep-alive] Ping failed: {e}")
+            time.sleep(14 * 60)  # Ping every 14 minutes
+
+    thread = threading.Thread(target=ping, daemon=True)
+    thread.start()
 
 if __name__ == "__main__":
-    main()  
+    keep_alive()
+    main()
