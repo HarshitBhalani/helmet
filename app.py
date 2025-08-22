@@ -415,21 +415,21 @@ def main():
         st.warning("Select a valid mode from the sidebar.")
 
 # Keep-alive ping to prevent sleeping on Render or similar hosting
-RENDER_URL = 'https://helmet-tmnq.onrender.com/?health=true' 
+# RENDER_URL = 'https://helmet-tmnq.onrender.com/?health=true' 
 
-def keep_alive():
-    def ping():
-        while True:
-            try:
-                with urllib.request.urlopen(RENDER_URL) as response:
-                    print(f"[Keep-alive] Ping response: {response.status}")
-            except Exception as e:
-                print(f"[Keep-alive] Ping failed: {e}")
-            time.sleep(14 * 60)  # Ping every 14 minutes
+# def keep_alive():
+#     def ping():
+#         while True:
+#             try:
+#                 with urllib.request.urlopen(RENDER_URL) as response:
+#                     print(f"[Keep-alive] Ping response: {response.status}")
+#             except Exception as e:
+#                 print(f"[Keep-alive] Ping failed: {e}")
+#             time.sleep(14 * 60)  
 
-    thread = threading.Thread(target=ping, daemon=True)
-    thread.start()
+#     thread = threading.Thread(target=ping, daemon=True)
+#     thread.start()
 
-if __name__ == "__main__":
-    keep_alive()
-    main()
+# if __name__ == "__main__":
+#     keep_alive()
+#     main()
